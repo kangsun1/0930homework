@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- 1. 비밀번호 란은 입력한 값이 보이면 안됩니다.
+2. 비밀번호 옆 완료버튼은 눌러도 반응이 없습니다.
+3. select박스의 순서도 역시, 짜장면, 짬뽕, 탕수육 순서입니다.
+4. 짬뽕 체크박스는 선택한 상태로 시작하며, 옆에 글자를 눌러도 체크박스가 작동합니다.
+5. 자소서 옆 입력창은 여러줄 입력가능한 입력창
+6. 검색 옆 버튼 Q1 Q2는 반응 없음
+7. 전송과 리셋버튼은 각각 submit, reset 역할입니다.-->
+    <form> 
+        <!-- 입력 요소 만들기 시작-->
+        <!-- ID 입력 창-->사용자 ID : <input type="text"> <br>
+        <!-- 비밀 번호 입력 창-->비밀 번호 : <input type="password">
+        <!-- 비밀 번호 입력 창 옆 완료 버튼--> <input type="button" value="완료"> <br>
+    
+    <!-- 셀렉트 박스(짜장면, 짬뽕, 탕수육 순서)--><select>
+        <optgroup label="중식">
+            <option>짜장면</option>
+            <option>짬뽕</option>
+            <option>탕수육</option>
+        </optgroup>
+    </select>
+<br>
+
+    <!-- 짜장면, 짬뽕, 탕수육 체크박스 --><label>짜장면 <input type="checkbox"></label>
+    <label>짬뽕 <input type="checkbox" id="'cn_jjamppon" checked></label>
+    <label>탕수육 <input type="checkbox"></label>
+    <br>
+
+    <!-- 이름 입력 창 --> 이름 : <input type="text"> <br>
+    <!-- 암호 입력 창 --> 암호 : <input type="password"> <br>
+    <!-- 자소서 입력 창 --> 자소서 : <textarea></textarea> <br>
+    <!-- Q1, Q2가 반응이 없는 검색 창 --> 검색 : <input type="text">
+    <input type="button" value="Q1">
+    <input type="button" value="Q2"> <br>
+    <!-- 제출 버튼 --> submit 버튼 : <input type="submit", value="전송1">
+    <input type="submit", value="전송2"> <br>
+    <!-- 리셋 버튼--> reset 버튼 : <input type="reset", value="리셋1">
+    <input type="reset", value="리셋2">
+    </form>
+</body>
+</html>
